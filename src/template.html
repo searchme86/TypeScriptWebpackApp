@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      class="header-image"
+      src="../images/header-image.jpg"
+      alt="To Do List"
+    />
+    <h1>To Do List</h1>
+    <div class="todolist-wrapper">
+      <input class="new-todo" placeholder="Enter text here" autofocus />
+      <ul class="todo-list"></ul>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal-delete-todo"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="modalDeleteTodo"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>Do you really want to delete this todo item?</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              cancel
+            </button>
+            <button
+              type="button"
+              id="modal-delete-button"
+              class="btn btn-primary"
+            >
+              Confirm
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
